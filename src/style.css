@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+:root {
+    --color-green_light: #c9e265;
+    --color-blue_light: #38b6ff;
+    --color-violet_dark: #011824;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+.missedMedicineContainer::-webkit-scrollbar-thumb {
+    background: #ca8a04;
+    border-radius: 10px;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    z-index: 10;
+}
+
+#css3-spinner-svg-pulse-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 260px;
+    height: 210px;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -130px;
+    animation: none;
+    -webkit-animation: none;
+}
+
+#css3-spinner-svg-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -275px;
+}
+
+#css3-spinner-pulse {
+    stroke-dasharray: 281;
+    animation: dash 5s infinite linear forwards;
+    -webkit-animation: dash 5s infinite linear forwards;
+}
+
+/*Animation*/
+/*Overriding default css from animate.css library*/
+.animate__fadeInUp {
+    transition: fadeInUp 1s;
+}
+
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset: 814;
+    }
+
+    to {
+        stroke-dashoffset: -814;
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 814;
+    }
+
+    to {
+        stroke-dashoffset: -814;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

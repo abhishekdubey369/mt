@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='theme-color' content='#000000' />
+    <meta name='description' content='WebApp made by using react ' />
+    <title>MediTrack</title>
+    <link rel='icon' type='image/x-icon' href='/public/images/favicon_io/favicon.ico'>
+    <link rel='apple-touch-icon' type='image/x-icon' href='/public/images/favicon_io/apple-touch-icon.png' />
+    <link
+        rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+    />
+
+
+</head>
+<body onload='myFunction()'>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+<div id='preloader'>
+    <div id='css3-spinner-svg-pulse-wrapper'>
+        <svg
+            id='css3-spinner-svg-pulse'
+            version='1.2'
+            height='210'
+            width='550'
+            xmlns='http://www.w3.org/2000/svg'
+            viewport='0 0 60 60'
+
+            xml:lang='http://www.w3.org/1999/xlink'
+        >
+            <path
+                id='css3-spinner-pulse'
+                stroke='var(--bs-danger)'
+                fill='none'
+                stroke-width='2'
+                stroke-linejoin='round'
+                d='M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210'
+            />
+        </svg>
+    </div>
+</div>
+<div id='root'></div>
+</body>
+
+<script>
+    let myVar
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 2000)
+    }
+
+    function showPage() {
+        document.getElementById('preloader').style.display = 'none'
+    }
+
+
+</script>
+<!--start webpushr code -->
+<script>
+    (function(w, d, s, id) {
+        if (typeof (w.webpushr) !== 'undefined') return
+        w.webpushr = w.webpushr || function() {
+            (w.webpushr.q = w.webpushr.q || []).push(arguments)
+        }
+        let js, fjs = d.getElementsByTagName(s)[0]
+        js = d.createElement(s)
+        js.id = id
+        js.async = 1
+        js.src = 'https://cdn.webpushr.com/app.min.js'
+        fjs.parentNode.appendChild(js)
+    }(window, document, 'script', 'webpushr-jssdk'))
+    webpushr('setup', {
+        'key': 'BNrTFYu6ILzALBLDTKyH0IjrYRc9r7o4r04237HPEmaGba0Jqqy-f8g4wlULj5Q3yZ9Ay9Ia4I2tVE4yIfI4_no',
+        'integration': 'popup',
+    })</script>
+<!-- end webpushr code -->
+</html>
+
